@@ -87,8 +87,7 @@ export const SendOtp = async (req, res) => {
 };
 export const resetPassword = async (req, res) => {
   const { userId, password } = req.body;
-   console.log(userId)
-   console.log(password)
+   
   if (!userId || !password)
     return res.status(400).json({ msg: "Missing userId or password" });
 
